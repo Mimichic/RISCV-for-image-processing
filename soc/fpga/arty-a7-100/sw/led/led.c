@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
   asm("csrsi 0x7c0, 1"); // enable icache
 
   while (1) {
-    usleep(1000 * 1000); // 1000 ms
+    usleep(1000000); // 1000 ms
     //usleep(1 * 1000); // 1 ms
     *var = *var + 1;
   }

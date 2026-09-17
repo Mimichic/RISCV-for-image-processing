@@ -1,7 +1,7 @@
 /* SoC Toplevel */
 
 module ibex_soc
-  #(parameter bit WBInterconnet = 1'b1, // 0:shared, 1:crossbar
+  #(parameter bit WBInterconnet = 1'b0, // 0:shared, 1:crossbar
     parameter bit ICache        = 1'b1) // 0:prefetch buffer, 1:instruction cache
    (input  logic       clk100mhz,
     input  logic       ck_rst_n,
